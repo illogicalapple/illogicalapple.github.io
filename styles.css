@@ -1,0 +1,12 @@
+html, body {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+}
+
+.big {
+	font-size: 40px;
+}
+
+.red {
+	color: #d93f3f;
+}
