@@ -1,6 +1,7 @@
 html, body {
 	font-family: Roboto, sans-serif;
 	font-size: 20px;
+	text-align: center;
 }
 
 .big {
@@ -9,4 +10,8 @@ html, body {
 
 .red {
 	color: #d93f3f;
+}
+
+h1 {
+	line-height: 0px;
 }
