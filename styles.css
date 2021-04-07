@@ -26,11 +26,3 @@ div.parent {
 	left: 50vw;
 	transform: translateX(-50%) translateY(-50%);
 }
-
-img.background {
-	position: absolute;
-	z-index: -1;
-	height: 100vh;
-	top: 0px;
-	left: 0px;
-}
