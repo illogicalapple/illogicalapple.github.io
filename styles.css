@@ -5,7 +5,7 @@ html, body {
 }
 
 .big {
-	font-size: 40px;
+	font-size: 28px;
 }
 
 .red {
@@ -25,4 +25,14 @@ div.parent {
 	top: 50vh;
 	left: 50vw;
 	transform: translateX(-50%) translateY(-50%);
+}
+
+.background {
+	background-image: url("apples.jpg");
+	position: relative;
+	z-index: -1;
+	height: 100vm;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
 }
