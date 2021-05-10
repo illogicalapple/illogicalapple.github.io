@@ -30,8 +30,8 @@ div.parent {
 .tobig {
 	animation-name: tobig;
 	-webkit-animation-name: tobig;
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
 	animation-timing-function: ease;
 	-webkit-animation-timing-function: ease;
 	animation-fill-mode: forwards;
