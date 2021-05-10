@@ -1,11 +1,11 @@
 html, body {
 	font-family: Montserrat, sans-serif;
-	font-size: 20px;
+	font-size: 1.1em;
 	text-align: center;
 }
 
 .big {
-	font-size: 28px;
+	font-size: 1.3em;
 }
 
 .red {
@@ -25,4 +25,29 @@ div.parent {
 	top: 50vh;
 	left: 50vw;
 	transform: translateX(-50%) translateY(-50%);
+}
+
+.tobig {
+	animation-name: tobig;
+	-webkit-animation-name: tobig;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes tobig {
+	from {
+		font-size: 1.1em;
+	}
+	to {
+		font-size: 1.3em;
+	}
+}
+
+img.apple {
+	width: 75%;
+	max-width: 500px;
 }
