@@ -20,7 +20,7 @@ h1 {
 	line-height: 0px;
 }
 
-div.parent {
+.parent {
 	position: absolute;
 	top: 50vh;
 	left: 50vw;
