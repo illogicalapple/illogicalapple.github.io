@@ -8,6 +8,11 @@ const things = [
 		name: "Sarcastic Dictionary",
 		description: "Definition of \"Sarcastic Dictionary\": A sarcastic dictionary.",
 		url: "sarcastic-dictionary"
+	},
+	{
+		name: "This site",
+		description: "Uhh... ",
+		url: ""
 	}
 ];
 addEventListener("load", function() {
