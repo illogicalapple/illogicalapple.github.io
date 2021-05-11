@@ -14,7 +14,7 @@ html, body {
 }
 
 .darkred {
-	color: var(--darkred);
+	background-color: var(--darkred);
 }
 
 h1, h2, h3, h4, h5, h6 {
