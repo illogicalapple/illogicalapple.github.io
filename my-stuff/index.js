@@ -15,7 +15,7 @@ addEventListener("load", function() {
 		let thing = document.createElement("a");
 		thing.setAttribute("style", `display: block;
 		border: solid #d2d2d2;
-		padding: 10px 0px;
+		padding: 10px;
 		margin: 10px 0px;
 		border-width: 1px;
 		border-radius: 5px;
