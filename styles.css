@@ -50,6 +50,11 @@ a {
 	text-decoration: none;
 }
 
+#navigation a.option:hover {
+	text-decoration: none;
+	background-color: #0003;
+}
+
 :root a:hover {
 	text-decoration: underline;
 }
