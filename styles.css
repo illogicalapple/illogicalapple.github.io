@@ -67,3 +67,11 @@ a {
 	height: 100vh;
 	margin: 0px;
 }
+
+body[data-dark-mode="true"], body[data-dark-mode]:not([data-dark-mode="false"]) {
+	position: relative;
+	background-color: black;
+	margin: 0px;
+	z-index: -2;
+	color: white;
+}
