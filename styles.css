@@ -79,3 +79,7 @@ body[data-dark-mode="true"], body[data-dark-mode]:not([data-dark-mode="false"]) 
 	z-index: -2;
 	color: white;
 }
+
+img.darkModeToggle {
+	cursor: pointer;
+}
