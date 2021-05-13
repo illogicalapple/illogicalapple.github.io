@@ -9,6 +9,16 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<title>illogicalapple</title>
+		<style>
+			@media screen and (max-width: 100vh) { /* when the width is less than the height */
+				img {
+					display: none;
+				}
+				#content div.text {
+					width: 80vw !important; /* inline styles were a mistake */
+				}
+			}
+		</style>
 	</head>
 	<body data-dark-mode="false" style="margin: 0px;">
 		<nav id="navigation" style="position: fixed; left: 0px; top: 0px; height: 75px; box-shadow: 0px 4px 4px #0008; background-color: var(--darkred);" class="full-width">
@@ -31,6 +41,13 @@
 					</span>
 				</a>
 			</div>
+			<script>
+				document.querySelectorAll("#navigation .option").forEach(element => {
+					if((new URL(element.getAttribute("href"), location.href)).href === location.href) {
+						element.classList.add("bold");
+					}
+				});
+			</script>
 		</nav>
 		<main id="content" class="fullscreen">
 			<div class="text" style="position: absolute; transform: translateY(-50%); top: calc(50% + 50px); left: 10vw; width: calc(80vw - (100vh - 50px) / 1.509765625); font-size: 1.4em;">
@@ -53,6 +70,7 @@
 				</p>
 			</div>
 			<img src="apple-image.jpg" style="position: absolute; bottom: 0px; right: 0px; height: calc(100vh - 50px); z-index: -1;">
+			<img src="moon.svg" style="position: absolute; bottom: 0px; left: 0px; filter: invert(1); height: 70px;">
 		</main>
 	</body>
 </html>
