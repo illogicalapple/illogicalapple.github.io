@@ -41,7 +41,7 @@
 			</div>
 			<div style="position: absolute; right: 10px; top: 0px;" class="relative-full-height">
 				<a href="/my-stuff" style="display: table; padding: 0px 20px;" class="relative-full-height float-right option">
-					<span style="display: table-cell; vertical-align: middle; text-align: center;">
+					<span style="display: table-cell; vertical-align: middle; text-align: center;" class="bold">
 						Stuff I made
 					</span>
 				</a>
@@ -51,13 +51,6 @@
 					</span>
 				</a>
 			</div>
-			<script>
-				document.querySelectorAll("#navigation .option").forEach(element => {
-					if((new URL(element.getAttribute("href"), location.href)).href === location.href) {
-						element.classList.add("bold");
-					}
-				});
-			</script>
 		</nav>
 		<main id="content" class="fullscreen">
 			<div class="text" style="position: absolute; transform: translateY(-50%); top: calc(50% + 50px); left: 10vw; font-size: 1.4em; width: 65vw;">
