@@ -13,12 +13,20 @@
 		<style>
 			div.thing {
 				border: solid black 1px;
+				transition: 0.3s;
+				cursor: pointer;
 			}
 			body[data-dark-mode] div.thing {
 				border: solid white 1px;
 			}
 			body[data-dark-mode] div.thing .description {
 				color: white;
+			}
+			div.text div.container a {
+				text-decoration: none;
+			}
+			div.thing:hover {
+				filter: brightness(130%);
 			}
 		</style>
 	</head>
