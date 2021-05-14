@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -7,23 +7,68 @@
 		<link rel="icon" href="/apple.png">
 		<link rel="stylesheet" href="/styles.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-		<script src="index.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet">
+		<script src="/dark-mode.js"></script>
 		<title>Stuff I made</title>
 		<style>
-			div.container a:hover h3.title {
-				filter: brightness(70%);
+			div.thing {
+				border: solid black 1px;
 			}
-			div.container h3.title {
-				transition: 0.1s;
+			body[data-dark-mode] div.thing {
+				border: solid white 1px;
 			}
 		</style>
 	</head>
-	<body>
-		<main class="parent">
-			<h1 class="darkred"> Stuff I made </h1>
-			These are some fun things that I made.
-			<div class="container"></div>
+	<body style="margin: 0px;">
+		<nav id="navigation" style="position: fixed; left: 0px; top: 0px; height: 75px; box-shadow: 0px 4px 4px #0008; background-color: var(--darkred);" class="full-width">
+			<div style="position: absolute; left: 10px; width: 50px;" class="relative-full-height">
+				<a href="/" style="position: absolute; left: 0px; padding: 10px; display: table;" class="relative-full-height title bold float-left option">
+					<span style="display: table-cell; vertical-align: middle; text-align: center;">
+						illogicalapple
+					</span>
+				</a>
+			</div>
+			<div style="position: absolute; right: 10px; top: 0px;" class="relative-full-height">
+				<a href="/my-stuff" style="display: table; padding: 0px 20px;" class="relative-full-height float-right option">
+					<span style="display: table-cell; vertical-align: middle; text-align: center;">
+						Stuff I made
+					</span>
+				</a>
+				<a href="/" style="display: table; padding: 0px 20px;" class="relative-full-height float-right option">
+					<span style="display: table-cell; vertical-align: middle; text-align: center;">
+						Home
+					</span>
+				</a>
+			</div>
+			<script>
+				document.querySelectorAll("#navigation .option").forEach(element => {
+					if((new URL(element.getAttribute("href"), location.href)).href === location.href) {
+						element.classList.add("bold");
+					}
+				});
+			</script>
+		</nav>
+		<main id="content" class="fullscreen">
+			<div class="text" style="position: absolute; transform: translateY(-50%); top: calc(50% + 50px); left: 10vw; font-size: 1.4em; width: 65vw;">
+				<h1 class="red" style="display: inline-block;float: left;position: static;">Stuff I made</h1>
+				<p style="display: inline-block; float: right; position: static;">These are some fun things that I made.</p>
+				<br> <br> <br> <div class="container">
+					<a>
+						<div class="thing" data-name="Sarcastic Dictionary" style="border-radius: 5px; padding: 30px; padding-top: 35px;">
+							<h3 class="red title" style="margin-bottom: 20px; margin-top: 0px;">Sarcastic Dictionary</h3>
+							<p style="margin: 0px;" class="description">A sarcastic dictionary.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<img src="/moon.svg" style="position: absolute; bottom: 0px; left: 0px; filter: invert(1); height: 70px;" class="darkModeToggle">
+			<script>
+				document.querySelector("img.darkModeToggle").addEventListener("click", function() {
+					this.setAttribute("src", (this.getAttribute("src") === "/moon.svg") ? "/sun.svg" : "/moon.svg");
+					document.body.toggleAttribute("data-dark-mode");
+					localStorage.darkMode = String(document.body.hasAttribute("data-dark-mode"));
+				});
+			</script>
 		</main>
 	</body>
 </html>
