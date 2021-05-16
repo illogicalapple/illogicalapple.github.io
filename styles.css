@@ -2,6 +2,8 @@
 	--darkred: #cc2f27;
 	--red: #ff3b30;
 	--orange: #ffa330;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 html, body {
