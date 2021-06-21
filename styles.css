@@ -86,3 +86,15 @@ body[data-dark-mode="true"], body[data-dark-mode]:not([data-dark-mode="false"]) 
 img.darkModeToggle {
 	cursor: pointer;
 }
+
+button {
+	padding: 10px 20px;
+	background-color: var(--red);
+	border: none;
+	border-radius: 5px;
+	color: inherit;
+}
+
+button:hover {
+	background-color: var(--darkred);
+}
