@@ -98,3 +98,7 @@ button {
 button:hover {
 	background-color: var(--darkred);
 }
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
