@@ -92,7 +92,7 @@ button {
 	background-color: var(--red);
 	border: none;
 	border-radius: 5px;
-	color: inherit;
+	color: white;
 }
 
 button:hover {
