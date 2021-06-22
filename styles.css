@@ -103,7 +103,7 @@ button:hover {
 
 ::-webkit-scrollbar-thumb {
 	background-color: #bbb;
-	border-radius: 14px;
+	border-radius: 7px;
 	transition: 0.3s;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -111,4 +111,6 @@ button:hover {
 }
 ::-webkit-scrollbar, ::-webkit-scrollbar-corner {
 	background-color: transparent;
+	width: 7px;
+	height: 7px;
 }
