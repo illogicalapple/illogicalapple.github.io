@@ -125,6 +125,9 @@ button:hover {
 	nav#navigation img:is(img) {
 		display: unset;
 	}
+	nav#navigation div.menu.menu {
+		display: inline-block;
+	}
 }
 nav#navigation img {
 	display: none;
@@ -135,7 +138,7 @@ nav#navigation img {
 	right: calc(35.5px - 0.5em);
 }
 nav#navigation div.menu {
-	display: inline-block;
+	display: none;
 	background-color: var(--darkred);
 	position: absolute;
 	right: 10px;
