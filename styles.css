@@ -145,6 +145,7 @@ nav#navigation div.menu {
 	text-align: center;
 	border: solid #0003 1px;
 	background-clip: border-box;
+	box-shadow: 0px 4px 4px #0008;
 }
 nav#navigation div.menu a {
 	padding: 5px;
