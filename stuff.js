@@ -6,10 +6,10 @@ addEventListener("load", function() {
 	document.querySelector("nav#navigation img").addEventListener("click", function() {
 		if(this.src === "/menu.svg") {
 			this.src = "/close.svg";
-			document.querySelector("nav#navigation div.menu").hidden = false;
+			document.querySelector("nav#navigation div.menu").style.display = "";
 		} else {
 			this.src = "/menu.svg";
-			document.querySelector("nav#navigation div.menu").hidden = true;
+			document.querySelector("nav#navigation div.menu").style.display = "none";
 		}
 	});
 });
