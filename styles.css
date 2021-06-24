@@ -2,6 +2,7 @@
 	--darkred: #cc2f27;
 	--red: #ff3b30;
 	--orange: #ffa330;
+	--color: #121212;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
 }
@@ -76,9 +77,10 @@ a {
 	margin: 0px;
 }
 
-body[data-dark-mode="true"], body[data-dark-mode]:not([data-dark-mode="false"]) {
+body[data-dark-mode] {
 	background-color: #121212;
 	color: white;
+	--color: white;
 }
 
 img.darkModeToggle {
