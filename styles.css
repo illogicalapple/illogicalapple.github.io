@@ -119,18 +119,18 @@ button:hover {
 	height: 47px;
 }
 @media screen and (max-width: 480px) {
-	nav#navigation div:nth-child(2) {
-		display: none;
-	}
-	nav#navigation img:is(img) {
-		display: unset;
-	}
+    nav#navigation div:nth-child(2) {
+        display: none;
+    }
+    nav#navigation img:is(img) {
+        display: unset;
+    }
 }
 nav#navigation img {
-	display: none;
-	height: 35.5px;
-	float: right;
-	position: relative;
-	top: 17.75px;
-	right: 17.75px;
+    display: none;
+    height: 1em;
+    float: right;
+    position: relative;
+    top: calc(35.5px - 0.5em);
+    right: calc(35.5px - 0.5em);
 }
