@@ -4,7 +4,7 @@ addEventListener("load", function() {
 		document.querySelector(".darkModeToggle").setAttribute("src", "/sun.svg");
 	}
 	document.querySelector("nav#navigation img").addEventListener("click", function() {
-		if(this.src === "/menu.svg") {
+		if(this.getAttribute("src") === "/menu.svg") {
 			this.src = "/close.svg";
 			document.querySelector("nav#navigation div.menu").style.display = "";
 		} else {
