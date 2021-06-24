@@ -119,18 +119,41 @@ button:hover {
 	height: 47px;
 }
 @media screen and (max-width: 480px) {
-    nav#navigation div:nth-child(2) {
-        display: none;
-    }
-    nav#navigation img:is(img) {
-        display: unset;
-    }
+	nav#navigation div:nth-child(2) {
+		display: none;
+	}
+	nav#navigation img:is(img) {
+		display: unset;
+	}
 }
 nav#navigation img {
-    display: none;
-    height: 1em;
-    float: right;
-    position: relative;
-    top: calc(35.5px - 0.5em);
-    right: calc(35.5px - 0.5em);
+	display: none;
+	height: 1em;
+	float: right;
+	position: relative;
+	top: calc(35.5px - 0.5em);
+	right: calc(35.5px - 0.5em);
+}
+nav#navigation div.menu {
+	display: inline-block;
+	background-color: var(--darkred);
+	position: absolute;
+	right: 10px;
+	top: 75px;
+	border-radius: 0px 0px 5px 5px;
+	padding: 5px 10px;
+	text-align: center;
+	border: solid #0003 1px;
+	background-clip: border-box;
+}
+nav#navigation div.menu a {
+	padding: 5px;
+	display: inline-block;
+	width: calc(100% + 20px);
+	position: relative;
+	right: 10px;
+}
+nav#navigation div.menu a:hover {
+	background-color: #0005;
+	text-decoration: none;
 }
