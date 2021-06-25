@@ -15,6 +15,8 @@
 			div.thing {
 				border: solid lightgray 1px;
 				cursor: pointer;
+				transition: 0.3s ease-in-out;
+				transition-property: box-shadow;
 			}
 			body[data-dark-mode] div.thing .description {
 				color: white;
@@ -23,7 +25,7 @@
 				text-decoration: none;
 			}
 			div.thing:hover {
-				box-shadow: 0px 4px 4px #0008;
+				box-shadow: 0px 4px 4px #0003;
 			}
 			@media screen and (max-width: 1000px) {
 				div.text > p {
