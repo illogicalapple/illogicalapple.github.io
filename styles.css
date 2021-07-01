@@ -134,3 +134,12 @@ nav#navigation div.menu a:hover {
 nav#navigation {
 	position: fixed;
 }
+input {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 5px;
+	outline: none;
+}
+input:focus {
+	border-color: var(--orange);
+}
