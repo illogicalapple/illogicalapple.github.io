@@ -1,71 +1,30 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="author" content="illogicalapple">
-		<meta name="description" content="illogicalapple's website">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="/apple.png">
-		<link rel="stylesheet" href="/styles.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-		<script src="/stuff.js"></script>
-		<title>illogicalapple</title>
-		<style>
-			@media screen and (max-width: 100vh) { /* when the width is less than the height */
-				img.apple {
-					display: none;
-				}
-				#content div.text {
-					width: 80vw !important; /* inline styles were a mistake */
-				}
-			}
-		</style>
-	</head>
-	<body style="margin: 0px;">
-		<nav id="navigation" style="position: fixed; left: 0px; top: 0px; height: 75px; box-shadow: 0px 4px 4px #0008; background-color: var(--darkred);" class="full-width">
-			<div style="position: absolute; left: 10px; width: 50px;" class="relative-full-height">
-				<a href="/" style="position: absolute; left: 0px; padding: 0px 20px; display: table;" class="relative-full-height title bold float-left option">
-					<span style="display: table-cell; vertical-align: middle; text-align: center;">
-						illogicalapple
-					</span>
-				</a>
+<head>
+	<title>illogicalapple</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="illogicalapple">
+	<meta name="description" content="illogicalapple's website">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" href="/apple.png">
+	<link rel="stylesheet" href="/styles.css">
+	<script src="/index.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&amp;family=PT+Sans&amp;family=Poppins:wght@600&amp;family=Source+Code+Pro&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+	<main role="main">
+		<div style="position: absolute; display: grid; grid-template-columns: 1fr 1fr; top: 50%; left: 50%; transform: translate(calc(-50% - 5em), -50%);">
+		    <img src="image.png" style="border-radius: 100%; height: 40vh;">
+			<div>
+				<div style="position: relative; top: 50%; transform: translate(5em, -50%);">
+					<h1>hi, <span style="color: var(--secondary);">it's me.</span></h1>
+					<p style="font-size: 1.4em;">vote apples over kumquats
+						<br>let's go apples!</p>
+				</div>
 			</div>
-			<div style="position: absolute; right: 10px; top: 0px;" class="relative-full-height">
-				<a href="/my-stuff" style="display: table; padding: 0px 20px;" class="relative-full-height float-right option">
-					<span style="display: table-cell; vertical-align: middle; text-align: center;">
-						Stuff I made
-					</span>
-				</a>
-				<a href="/" style="display: table; padding: 0px 20px;" class="relative-full-height float-right option">
-					<span style="display: table-cell; vertical-align: middle; text-align: center;" class="bold">
-						Home
-					</span>
-				</a>
-			</div>
-			<img src="/menu.svg">
-			<div class="menu" style="display: none;">
-				<a href="/">Home</a>
-				<br> <a href="/my-stuff">Stuff I made</a>
-			</div>
-		</nav>
-		<main id="content">
-			<div class="text" style="position: absolute; transform: translateY(-50%); top: calc(50% + 50px); left: 10vw; width: calc(80vw - (100vh - 50px) / 1.509765625); font-size: 1.4em;">
-				<h1 class="red"> Hello. </h1>
-				<p style="padding: 0px; margin: 0px;">
-					My name is <span class="red">
-						illogicalapple
-					</span> and I am an <span class="red">
-						apple. 
-					</span>
-					I started making <a href="true-facts" style="color: var(--orange);">true-facts</a> in <time datetime="2020-12">
-						December 2020,
-					</time> and I made some other fun <a href="my-stuff" style="color: var(--orange);">stuff</a> later.
-					I really like making stuff.
-					<br> <br> Hope you enjoy!
-				</p>
-			</div>
-			<img src="apple-image.jpg" style="position: absolute; bottom: 0px; right: 0px; height: calc(100vh - 50px); z-index: -1;" class="apple" alt="Apple">
-		</main>
-	</body>
+		</div>
+	</main>
+</body>
 </html>
