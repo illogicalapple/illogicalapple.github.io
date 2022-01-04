@@ -1,10 +1,11 @@
 ---
 # nothing
 ---
+{% assign page = "home" %}
 <!doctype html>
 <html lang="en">
 	<head>
-		{% include /_includes/header.html %}
+		{% include /_includes/head.html %}
 		<meta name="description" content="illogicalapple's website">
 		<title>illogicalapple</title>
 		<style>
@@ -19,32 +20,7 @@
 		</style>
 	</head>
 	<body style="margin: 0px;">
-		<nav id="navigation" style="position: fixed; left: 0px; top: 0px; height: 75px; box-shadow: 0px 4px 4px #0008; background-color: var(--darkred);" class="full-width">
-			<div style="position: absolute; left: 10px; width: 50px;" class="relative-full-height">
-				<a href="/" style="position: absolute; left: 0px; padding: 0px 20px; display: table;" class="relative-full-height title bold float-left option">
-					<span style="display: table-cell; vertical-align: middle; text-align: center;">
-						illogicalapple
-					</span>
-				</a>
-			</div>
-			<div style="position: absolute; right: 10px; top: 0px;" class="relative-full-height">
-				<a href="/my-stuff" style="display: table; padding: 0px 20px;" class="relative-full-height float-right option">
-					<span style="display: table-cell; vertical-align: middle; text-align: center;">
-						Stuff I made
-					</span>
-				</a>
-				<a href="/" style="display: table; padding: 0px 20px;" class="relative-full-height float-right option">
-					<span style="display: table-cell; vertical-align: middle; text-align: center;" class="bold">
-						Home
-					</span>
-				</a>
-			</div>
-			<img src="/menu.svg">
-			<div class="menu" style="display: none;">
-				<a href="/">Home</a>
-				<br> <a href="/my-stuff">Stuff I made</a>
-			</div>
-		</nav>
+		{% include /_includes/navbar.html %}
 		<main id="content">
 			<div class="text" style="position: absolute; transform: translateY(-50%); top: calc(50% + 50px); left: 10vw; width: calc(80vw - (100vh - 50px) / 1.509765625); font-size: 1.4em;">
 				<h1 class="red"> Hello. </h1>
